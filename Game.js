@@ -1,10 +1,8 @@
 // HELLO THIS IS MY AWESOME GAME CODE! 
 // Okay so first of all, we need to like actually get the game sheet
 function getGameSheet(){
-return SpreadsheetApp
-.openById("1MS0sPF_BmCVpQzkyTMqt92y0-5OChNylnZDAN4jdmjE")
-// if anyone wants to change the sheet they can paste the code in their link here ^^
-.getSheets()[0];}
+    return SpreadsheetApp.getActiveSpreadsheet().getSheets()[0];
+}
 // If your controller's not working, run the function below on AppsScript
 function RunThisFunctionFirst() {
     const sheet = getGameSheet();
