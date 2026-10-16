@@ -304,8 +304,8 @@ function doodleScore() {
     hiscore = Math.max(hiscore, score)
     storage.setProperty("hiscore", String(hiscore));
 
-    sheet.getRange("B1").setValue("Score=" + score)
-    sheet.getRange("D1").setValue("High Score=" + hiscore)
+    sheet.getRange("B1").setValue("Score=" + score).setFontColor("#63ba38").setFontFamily("DotGothic16");
+    sheet.getRange("D1").setValue("High Score=" + hiscore).setFontColor("#63ba38").setFontFamily("DotGothic16");
 
 
 }
